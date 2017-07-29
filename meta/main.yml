@@ -1,0 +1,12 @@
+galaxy_info:
+  author: DANS-KNAW
+  description: Helper ansible role to create/update a local yum repository to share with a vagrant box for testing.
+  company: "DANS-KNAW"
+  license: "Apache 2.0"
+  min_ansible_version: 2.0
+  platforms:
+    - name: EL
+  galaxy_tags:
+    # Add tags to classify this module
+
+allow_duplicates: yes

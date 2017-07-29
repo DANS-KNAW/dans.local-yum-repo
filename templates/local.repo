@@ -1,0 +1,7 @@
+[local]
+name=Local Repository
+baseurl=file://{{ project_basedir_from_vagrant_box }}/{{ yum_repo_dirname }}
+enabled=1
+gpgcheck=0
+keepcache=0
+metadata_expire=0s

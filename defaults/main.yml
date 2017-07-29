@@ -1,0 +1,7 @@
+# Location of the project's base directory as seen from the host machine.
+project_basedir_from_host_machine: "../../.."
+# Location of the project's base directory as seen from inside the vagrant box.
+project_basedir_from_vagrant_box: "/vagrant"
+# Glob pattern for the RPM packages to be added to the yum repo
+rpms_glob_pattern: "{{ project_basedir_from_host_machine }}/target/rpm/*/RPMS/noarch/*.rpm"
+yum_repo_dirname: ".dans.knaw.nl-yum-repo"
