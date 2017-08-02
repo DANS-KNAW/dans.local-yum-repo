@@ -20,7 +20,7 @@
 
 - name: Copy RPMs
   become: no
-  local_action: shell cp {{ rpms_glob_pattern }} {{ project_basedir_from_host_machine }}/{{ yum_repo_dirname }}/
+  local_action: shell cp {{ rpms_glob_pattern }} {{ local_yum_repo_project_basedir_from_host_machine }}/{{ yum_repo_dirname }}/
 
 - name: Install the createrepo tool
   yum: name=createrepo
