@@ -15,18 +15,18 @@
 #
 - name: Create local yum repo dir
   file:
-    path: "{{ project_basedir_from_vagrant_box }}/{{ yum_repo_dirname }}"
+    path: "{{ local_yum_repo_project_basedir_from_vagrant_box }}/{{ local_yum_repo_dirname }}"
     state: directory
 
 - name: Copy RPMs
   become: no
-  local_action: shell cp {{ rpms_glob_pattern }} {{ local_yum_repo_project_basedir_from_host_machine }}/{{ yum_repo_dirname }}/
+  local_action: shell cp {{ local_yum_repo_rpms_glob_pattern }} {{ local_yum_repo_project_basedir_from_host_machine }}/{{ local_yum_repo_dirname }}/
 
 - name: Install the createrepo tool
   yum: name=createrepo
 
 - name: Update repo
-  command: createrepo --update {{ project_basedir_from_vagrant_box }}/{{ yum_repo_dirname }}
+  command: createrepo --update {{ local_yum_repo_project_basedir_from_vagrant_box }}/{{ local_yum_repo_dirname }}
 
 - name: Configure repo
   template:
