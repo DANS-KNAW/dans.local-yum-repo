@@ -1,6 +1,6 @@
 [local]
 name=Local Repository
-baseurl=file://{{ project_basedir_from_vagrant_box }}/{{ yum_repo_dirname }}
+baseurl=file://{{ local_yum_repo_project_basedir_from_vagrant_box }}/{{ local_yum_repo_dirname }}
 enabled=1
 gpgcheck=0
 keepcache=0
