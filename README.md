@@ -25,7 +25,7 @@ upgraded on the vagrant box with the `yum` command.
 * The host machine shares the project base directory with the vagrant box, and this directory is  
   mounted at `/vagrant`. This can be overridden by setting the variable `local_yum_repo_project_basedir_from_vagrant_box`.
 * The RPM packages are built using the `rpm-maven-plugin` and are of architecture `noarch`. This can
-  be overridden by changing the glob pattern that is used to find the RPMs, in the variable
-  `local_yum_repo_rpms_glob_pattern`.
+  be overridden by changing the glob patterns that are used to find the RPMs, in the variable
+  `local_yum_repo_rpms_glob_patterns`.
 
     
