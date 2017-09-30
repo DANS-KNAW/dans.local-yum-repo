@@ -33,3 +33,4 @@
   template:
     src: dans.knaw.nl.repo
     dest: /etc/yum.repos.d/
+  when: local_yum_repo_add_default_config
