@@ -7,4 +7,4 @@ local_yum_repo_rpms_glob_patterns:
   - "{{ local_yum_repo_project_basedir_from_host_machine }}/target/rpm/*/RPMS/noarch/*.rpm"
 local_yum_repo_dirname: ".dans.knaw.nl-yum-repo"
 # Add the default configuration?
-local_yum_repo_default_config: yes
+local_yum_repo_add_default_config: yes
